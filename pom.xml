@@ -11,7 +11,7 @@
     </parent>
     <modules>
         <module>configuration-server</module>
-        <module>demo</module>
+        <module>eureka-server</module>
         <module>eureka-client-lab-2</module>
         <module>Java-spring-cloud-master</module>
     </modules>
