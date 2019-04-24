@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java_microservices.iml" filepath="$PROJECT_DIR$/.idea/Java_microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-spring-cloud-master/SpringBootMSC.iml" filepath="$PROJECT_DIR$/Java-spring-cloud-master/SpringBootMSC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configuration-server/configuration-server.iml" filepath="$PROJECT_DIR$/configuration-server/configuration-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client-lab-2/eureka-client-lab-2.iml" filepath="$PROJECT_DIR$/eureka-client-lab-2/eureka-client-lab-2.iml" />
+    </modules>
+  </component>
+</project>
