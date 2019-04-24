@@ -23,8 +23,6 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class EurekaClientLab2Application {
     private static Logger log = LoggerFactory.getLogger(EurekaClientLab2Application.class);
-    @Value("${message.helloworld: Hello default}")
-    private String helloMessage;
 
     @Bean
     RestTemplate restTemplate(){
@@ -41,11 +39,6 @@ public class EurekaClientLab2Application {
     public String getInstancesRun(){
         ServiceInstance instance = client.choose("a-bootiful-client");
         return instance.getUri().toString();
-    }
-
-    @GetMapping(value = "/config")
-    public String getHello(){
-        return helloMessage;
     }
 
     @RequestMapping(value = "/builders/{id}", method = RequestMethod.GET)

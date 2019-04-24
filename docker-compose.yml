@@ -17,7 +17,7 @@ services:
                         APP_NAME: test-app-1
         eureka-client-lab-2:
                 depends_on:
-                        - spring-boot-msc
+                        - configuration-server
                 container_name: eureka-client-lab-2
                 build:
                         context: ./eureka-client-lab-2
@@ -29,8 +29,12 @@ services:
                 environment:
                         DB_HOST: spring-db:3306
                         APP_NAME: not-test-app-2
+                ports:
+                  - "8888:80"
         configuration-server:
                 container_name: configuration-server
+                depends_on:
+                  - rabbit-mq
                 build:
                         context: ./configuration-server
                         dockerfile: docker/spring.docker
@@ -38,6 +42,8 @@ services:
                         - ./configuration-server:/usr/src/configuration-server
                 networks:
                         - default
+                ports:
+                  - "9999:8888"
                 environment:
                         DB_HOST: spring-db:3306
         eureka-server:
