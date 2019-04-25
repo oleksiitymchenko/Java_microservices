@@ -1,0 +1,87 @@
+version: '3'
+
+services:
+        spring-boot-msc:
+                depends_on:
+                        - db
+                container_name: spring-app
+                build:
+                        context: ./Java-spring-cloud-master
+                        dockerfile: docker/spring.docker
+                volumes:
+                        - ./Java-spring-cloud-master:/usr/src/Java-spring-cloud-master
+                networks:
+                        - default
+                environment:
+                        DB_HOST: spring-db:3306
+                        APP_NAME: test-app-1
+        eureka-client-lab-2:
+                depends_on:
+                        - configuration-server
+                container_name: eureka-client-lab-2
+                build:
+                        context: ./eureka-client-lab-2
+                        dockerfile: docker/spring.docker
+                volumes:
+                        - ./eureka-client-lab-2:/usr/src/eureka-client-lab-2
+                networks:
+                        - default
+                environment:
+                        DB_HOST: spring-db:3306
+                        APP_NAME: not-test-app-2
+                ports:
+                  - "8888:80"
+        configuration-server:
+                container_name: configuration-server
+                depends_on:
+                  - rabbit-mq
+                build:
+                        context: ./configuration-server
+                        dockerfile: docker/spring.docker
+                volumes:
+                        - ./configuration-server:/usr/src/configuration-server
+                networks:
+                        - default
+                ports:
+                  - "9999:8888"
+                environment:
+                        DB_HOST: spring-db:3306
+        eureka-server:
+                container_name: eureka-server
+                build:
+                        context: ./eureka-server
+                        dockerfile: docker/spring.docker
+                volumes:
+                        - ./eureka-server:/usr/src/eureka-server
+                networks:
+                        - default
+                ports:
+                        - "8761:8761"
+                environment:
+                        DB_HOST: spring-db:3306
+        rabbit-mq:
+                image: rabbitmq:3.8.0-beta.3-management
+                hostname: rabbit-mq
+                container_name: rabbit-mq
+                networks:
+                  - default
+                environment:
+                        RABBITMQ_ERLANG_COOKIE: secret
+                        RABBITMQ_NODENAME: rabbit@rabbit-mq
+                ports:
+                        - "15672:15672"
+        db:
+                container_name: spring-db
+                build:
+                        context: ./docker
+                        dockerfile: database.docker
+                volumes:
+                        - db_data:/var/lib/mysql
+                environment:
+                        MYSQL_ROOT_PASSWORD: secret
+                        MYSQL_DATABASE: springdb
+                ports:
+                        - "33061:3306"
+volumes:
+        db_data:
+        maven_cache:
