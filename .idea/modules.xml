@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_microservices.iml" filepath="$PROJECT_DIR$/.idea/Java_microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-spring-cloud-master/SpringBootMSC.iml" filepath="$PROJECT_DIR$/Java-spring-cloud-master/SpringBootMSC.iml" />
       <module fileurl="file://$PROJECT_DIR$/configuration-server/configuration-server.iml" filepath="$PROJECT_DIR$/configuration-server/configuration-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/demo.iml" filepath="$PROJECT_DIR$/eureka-server/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client-lab-2/eureka-client-lab-2.iml" filepath="$PROJECT_DIR$/eureka-client-lab-2/eureka-client-lab-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logger/logger.iml" filepath="$PROJECT_DIR$/logger/logger.iml" />
     </modules>
   </component>
 </project>
