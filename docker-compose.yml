@@ -15,6 +15,23 @@ services:
                 environment:
                         DB_HOST: spring-db:3306
                         APP_NAME: test-app-1
+                ports:
+                - "8888:8888"
+        logger:
+                depends_on:
+                - db
+                - rabbit-mq
+                container_name: logger-app
+                build:
+                        context: ./RabbitMqLogger
+                        dockerfile: docker/spring.docker
+                volumes:
+                - ./RabbitMqLogger:/usr/src/RabbitMqLogger
+                networks:
+                - default
+                environment:
+                        DB_HOST: spring-db:3306
+                        APP_NAME: kek-app-1
         eureka-client-lab-2:
                 depends_on:
                         - configuration-server
@@ -30,7 +47,7 @@ services:
                         DB_HOST: spring-db:3306
                         APP_NAME: not-test-app-2
                 ports:
-                  - "8888:80"
+                  - "7777:7777"
         configuration-server:
                 container_name: configuration-server
                 depends_on:
@@ -43,7 +60,7 @@ services:
                 networks:
                         - default
                 ports:
-                  - "9999:8888"
+                  - "9999:9999"
                 environment:
                         DB_HOST: spring-db:3306
         eureka-server:
