@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20a222be-ffeb-4b57-a9f4-89329af23fda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Java-spring-cloud-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Java-spring-cloud-master/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMqLogger/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMqLogger/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/configuration-server/target/" />
@@ -14,6 +12,7 @@
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
     <ignored path="$PROJECT_DIR$/Java-spring-cloud-master/target/" />
     <ignored path="$PROJECT_DIR$/logger/target/" />
+    <ignored path="$PROJECT_DIR$/RabbitMqLogger/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +33,15 @@
         <counts>
           <entry key="Makefile" value="2" />
           <entry key="class" value="10" />
-          <entry key="docker" value="1" />
+          <entry key="cmd" value="1" />
+          <entry key="docker" value="2" />
           <entry key="java" value="41" />
           <entry key="json" value="1" />
+          <entry key="md" value="1" />
+          <entry key="mvnw" value="1" />
           <entry key="properties" value="17" />
-          <entry key="sh" value="2" />
-          <entry key="xml" value="7" />
+          <entry key="sh" value="3" />
+          <entry key="xml" value="8" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -48,28 +50,30 @@
           <entry key="CLASS" value="10" />
           <entry key="JAVA" value="41" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="Properties" value="17" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="8" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="docker" value="1" />
           <entry key="java" value="1856" />
           <entry key="properties" value="567" />
           <entry key="sh" value="20" />
-          <entry key="xml" value="35" />
-          <entry key="yml" value="84" />
+          <entry key="xml" value="41" />
+          <entry key="yml" value="103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1856" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Properties" value="567" />
-          <entry key="XML" value="35" />
-          <entry key="YAML" value="84" />
+          <entry key="XML" value="41" />
+          <entry key="YAML" value="103" />
         </counts>
       </usages-collector>
     </session>
@@ -80,7 +84,17 @@
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -88,71 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="82" column="25" lean-forward="true" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RabbitMqLogger/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java-spring-cloud-master/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configuration-server/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RabbitMqLogger/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/bootstrap.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            <state relative-caret-position="289">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -162,6 +113,58 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RabbitMqLogger/docker/spring.docker">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RabbitMqLogger/mvnw">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1122" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RabbitMqLogger/mvnw.cmd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2703">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -205,12 +208,14 @@
         <option value="$PROJECT_DIR$/Java-spring-cloud-master/src/main/java/com/labs/maven/springBoot/SpringBootMSC/Service/BuilderService.java" />
         <option value="$PROJECT_DIR$/RabbitMqLogger/src/main/java/com/labs/logger/DAL/Models/LoggerTable.java" />
         <option value="$PROJECT_DIR$/RabbitMqLogger/docker/entry.sh" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/Java-spring-cloud-master/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/RabbitMqLogger/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/configuration-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/RabbitMqLogger/docker/spring.docker" />
       </list>
     </option>
   </component>
@@ -233,7 +238,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="128" />
     <option name="y" value="12" />
     <option name="width" value="976" />
@@ -256,54 +261,13 @@
             <path>
               <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
               <item name="RabbitMqLogger" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
               <item name="RabbitMqLogger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="RabbitMqLogger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="RabbitMqLogger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,12 +388,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556211742931</updated>
       <workItem from="1556211752402" duration="2530000" />
-      <workItem from="1556882323312" duration="24168000" />
+      <workItem from="1556882323312" duration="28349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26698000" />
+    <option name="totallyTimeSpent" value="30879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -453,7 +417,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="10" weight="0.32850242" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.29951692" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.26928896" side_tool="true" visible="true" weight="0.25603864" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.26928896" side_tool="true" weight="0.25603864" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49924356" weight="0.32850242" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -793,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMqLogger/docker/spring.docker">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RabbitMqLogger/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -807,10 +764,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java-spring-cloud-master/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMqLogger/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMqLogger/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMqLogger/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2703">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -821,52 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/RabbitMqLogger/docker/spring.docker">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="82" column="25" lean-forward="true" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java-spring-cloud-master/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMqLogger/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client-lab-2/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

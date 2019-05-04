@@ -4,7 +4,7 @@ services:
         spring-boot-msc:
                 depends_on:
                         - db
-                container_name: spring-app
+                container_name: springapp
                 build:
                         context: ./Java-spring-cloud-master
                         dockerfile: docker/spring.docker
@@ -17,25 +17,10 @@ services:
                         APP_NAME: test-app-1
                 ports:
                 - "8888:8888"
-        logger:
-                depends_on:
-                - db
-                - rabbit-mq
-                container_name: logger-app
-                build:
-                        context: ./RabbitMqLogger
-                        dockerfile: docker/spring.docker
-                volumes:
-                - ./RabbitMqLogger:/usr/src/RabbitMqLogger
-                networks:
-                - default
-                environment:
-                        DB_HOST: spring-db:3306
-                        APP_NAME: kek-app-1
         eureka-client-lab-2:
                 depends_on:
                         - configuration-server
-                container_name: eureka-client-lab-2
+                container_name: eurekaclient-lab-2
                 build:
                         context: ./eureka-client-lab-2
                         dockerfile: docker/spring.docker
@@ -49,7 +34,7 @@ services:
                 ports:
                   - "7777:7777"
         configuration-server:
-                container_name: configuration-server
+                container_name: configurationserver
                 depends_on:
                   - rabbit-mq
                 build:
@@ -64,7 +49,7 @@ services:
                 environment:
                         DB_HOST: spring-db:3306
         eureka-server:
-                container_name: eureka-server
+                container_name: eurekaserver
                 build:
                         context: ./eureka-server
                         dockerfile: docker/spring.docker
@@ -79,7 +64,7 @@ services:
         rabbit-mq:
                 image: rabbitmq:3.8.0-beta.3-management
                 hostname: rabbit-mq
-                container_name: rabbit-mq
+                container_name: rabbitmq
                 networks:
                   - default
                 environment:
@@ -88,7 +73,7 @@ services:
                 ports:
                         - "15672:15672"
         db:
-                container_name: spring-db
+                container_name: spring-database
                 build:
                         context: ./docker
                         dockerfile: database.docker
@@ -99,6 +84,21 @@ services:
                         MYSQL_DATABASE: springdb
                 ports:
                         - "33061:3306"
+        logger:
+                depends_on:
+                - db
+                - rabbit-mq
+                container_name: logger-app
+                build:
+                        context: ./RabbitMqLogger
+                        dockerfile: docker/spring.docker
+                volumes:
+                - ./RabbitMqLogger:/usr/src/RabbitMqLogger
+                networks:
+                - default
+                environment:
+                        DB_HOST: spring-db:3306
+                        APP_NAME: logger-app
 volumes:
         db_data:
         maven_cache:

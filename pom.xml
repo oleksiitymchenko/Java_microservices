@@ -14,6 +14,7 @@
         <module>eureka-server</module>
         <module>eureka-client-lab-2</module>
         <module>Java-spring-cloud-master</module>
+        <module>RabbitMqLogger</module>
     </modules>
     <groupId>com.labs.maven.springBoot</groupId>
     <artifactId>parent</artifactId>
