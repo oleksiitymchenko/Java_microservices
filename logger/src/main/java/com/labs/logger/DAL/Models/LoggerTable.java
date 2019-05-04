@@ -1,4 +1,4 @@
-package com.labs.maven.springBoot.SpringBootMSC.Model;
+package com.labs.logger.DAL.Models;
 
 import javax.persistence.*;
 
@@ -8,10 +8,10 @@ public class LoggerTable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(name = "MessageType")
+    @Column(name = "MessageType", nullable = false)
     private String MessageType;
 
-    @Column(name = "MessageText")
+    @Column(name = "MessageText", nullable = false)
     private String MessageText;
 
     public int getId() {

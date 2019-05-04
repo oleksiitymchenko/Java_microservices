@@ -6,7 +6,6 @@ import org.hibernate.annotations.Where;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Builder")
 public class Builder {
 
     @Id

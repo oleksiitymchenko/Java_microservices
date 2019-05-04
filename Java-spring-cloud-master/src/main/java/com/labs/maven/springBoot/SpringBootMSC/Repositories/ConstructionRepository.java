@@ -1,7 +1,6 @@
 package com.labs.maven.springBoot.SpringBootMSC.Repositories;
 
 import com.labs.maven.springBoot.SpringBootMSC.Model.Construction;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

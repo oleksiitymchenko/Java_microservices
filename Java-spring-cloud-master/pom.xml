@@ -92,12 +92,13 @@
 			<artifactId>jstl</artifactId>
 		</dependency>
 
-        <!--added-->
+        <!-- eureka part
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix-eureka-server</artifactId>
             <version>2.1.1.RELEASE</version>
         </dependency>
+        -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
