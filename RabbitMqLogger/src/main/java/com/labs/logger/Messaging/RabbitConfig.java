@@ -11,34 +11,31 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitConfig {
-    @Value("${jsa.rabbitmq.queue}")
-    private String queueName;
-
-    @Value("${jsa.rabbitmq.exchange}")
-    private String exchange;
-
-    @Value("${jsa.rabbitmq.routingkey}")
-    private String routingKey;
-
+    @Value("${jsa.rabbitmq.queue.createdtype}")
+    String queueCreatedName;
     @Bean
-    Queue queue() {
-        return new Queue(queueName, false);
+    Queue createdQueue() {
+        return new Queue(queueCreatedName, false);
     }
 
+    @Value("${jsa.rabbitmq.queue.updatedtype}")
+    String queueUpdatedName;
     @Bean
-    DirectExchange exchange() {
-        return new DirectExchange(exchange);
+    Queue updatedQueue() {
+        return new Queue(queueUpdatedName, false);
     }
 
+    @Value("${jsa.rabbitmq.queue.deletedtype}")
+    String queueDeletedName;
     @Bean
-    Binding binding(Queue queue, DirectExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with(routingKey);
+    Queue deletedQueue() {
+        return new Queue(queueDeletedName, false);
     }
+
     @Bean
     public MessageConverter jsonMessageConverter() {
         return new Jackson2JsonMessageConverter();
     }
-
 
     @Bean
     public AmqpTemplate rabbitTemplate(ConnectionFactory connectionFactory) {

@@ -14,6 +14,17 @@ public class LoggerTable {
     @Column(name = "MessageText", nullable = false)
     private String MessageText;
 
+    public String getEntityName() {
+        return EntityName;
+    }
+
+    public void setEntityName(String entityName) {
+        EntityName = entityName;
+    }
+
+    @Column(name = "EntityName")
+    private String EntityName;
+
     public int getId() {
         return id;
     }
