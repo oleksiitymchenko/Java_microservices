@@ -7,14 +7,11 @@ services:
                 container_name: springapp
                 build:
                         context: ./Java-spring-cloud-master
-                        dockerfile: docker/spring.docker
+                        dockerfile: dockerfile.docker
                 volumes:
                         - ./Java-spring-cloud-master:/usr/src/Java-spring-cloud-master
-                networks:
-                        - default
                 environment:
                         DB_HOST: spring-db:3306
-                        APP_NAME: test-app-1
                 ports:
                 - "8888:8888"
         eureka-client-lab-2:
@@ -23,7 +20,7 @@ services:
                 container_name: eurekaclient-lab-2
                 build:
                         context: ./eureka-client-lab-2
-                        dockerfile: docker/spring.docker
+                        dockerfile: dockerfile.docker
                 volumes:
                         - ./eureka-client-lab-2:/usr/src/eureka-client-lab-2
                 networks:
@@ -39,7 +36,7 @@ services:
                   - rabbit-mq
                 build:
                         context: ./configuration-server
-                        dockerfile: docker/spring.docker
+                        dockerfile: dockerfile.docker
                 volumes:
                         - ./configuration-server:/usr/src/configuration-server
                 networks:
@@ -52,7 +49,7 @@ services:
                 container_name: eurekaserver
                 build:
                         context: ./eureka-server
-                        dockerfile: docker/spring.docker
+                        dockerfile: dockerfile.docker
                 volumes:
                         - ./eureka-server:/usr/src/eureka-server
                 networks:
@@ -91,7 +88,7 @@ services:
                 container_name: logger-app
                 build:
                         context: ./RabbitMqLogger
-                        dockerfile: docker/spring.docker
+                        dockerfile: dockerfile.docker
                 volumes:
                 - ./RabbitMqLogger:/usr/src/RabbitMqLogger
                 networks:

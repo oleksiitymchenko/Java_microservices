@@ -1,2 +1,2 @@
 FROM openjdk:8-jdk-alpine
-CMD ["java","-jar","/usr/src/RabbitMqLogger/target/logger-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","/usr/src/eureka-client-lab-2/target/eureka-client-lab-2-0.0.1-SNAPSHOT.jar"]
