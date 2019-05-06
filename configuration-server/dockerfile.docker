@@ -1,0 +1,2 @@
+FROM openjdk:8-jdk-alpine
+CMD ["java","-jar","/usr/src/eureka-server/target/demo-0.0.1-SNAPSHOT.jar"]

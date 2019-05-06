@@ -1,4 +1,0 @@
-FROM alpine:edge
-RUN apk update && apk add --no-cache openjdk8 maven git
-ADD docker/entry.sh /usr/entry.sh
-CMD ["/usr/entry.sh"]
